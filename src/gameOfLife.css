@@ -1,0 +1,36 @@
+body {
+    font-family: "HelveticaNeueBlack", "HelveticaNeue-Black", "Helvetica Neue Black", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Arial Black", sans-serif;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+h1, h2 {
+    font-weight: 800;
+}
+
+.error-message {
+    color: red;
+}
+
+select {
+    font-size: 16px;
+    width: auto;
+    vertical-align: 10%
+}
+
+input {
+    font-size: 16px;
+    width: auto;
+    vertical-align: 10%
+}
+
+textarea {
+    border:1px solid #999999;
+      font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+}
+
+.canvas-column {
+    float: left;
+    width: 512px;
+    padding: 5px;
+}

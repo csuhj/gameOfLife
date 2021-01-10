@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="gameOfLife.css">
+    <script lang="JavaScript" src="gameOfLife.js"></script>
+  </head>
+  <body>
+	<h1>Conway's Game of Life</h1>
+	<section>
+		<div class="canvas-column">
+			<div>
+				<canvas id="gameCanvas" width="512" height="512"></canvas>
+			</div>
+			<div>
+			    <input id="startButton" type="button" onClick="startGame();" value="Start" />
+			    <input id="stopButton" type="button" onClick="stopGame();" value="Stop" />
+			    <input id="stepButton" type="button" onClick="stepGame();" value="Step" />
+			    <span>Speed</span>
+			    <input type="range" id="speedSlider" onChange="updateSpeed();" min="0" max="100" value="90" />
+		    </div>
+			<div>
+	    		<input type="button" onClick="init();" value="Reset" />
+	    	</div>
+        </div>
+        <div>
+            <div>
+				<h3>Game size</h3>
+				<select id="sizeCombo" onChange="updateSize();">
+					<option value="4">128 x 128</option>
+					<option value="8">64 x 64</option>
+					<option value="16">32 x 32</option>
+					<option value="32" selected="selected">16 x 16</option>
+					<option value="64">8 x 8</option>
+				</select>
+			</div>
+            <div>
+				<h3>Starting points</h3>
+				<select id="startPositionCombo" onChange="init();">
+					<option value="Blank" selected="selected">Blank</option>
+					<option value="Oscillators">Oscillators</option>
+					<option value="Glider">Glider</option>
+					<option value="LightweightSpaceship">Lightweight Spaceship</option>
+					<option value="GliderGun">Glider gun</option>
+				</select>
+			</div>
+        </div>
+    </section>
+    <script>
+        setup();
+    </script>
+  </body>
+</html>
